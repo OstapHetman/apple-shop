@@ -1,0 +1,24 @@
+@media screen and (max-width: 580px){
+	nav ul {
+		max-height: 0;
+	}
+	.showing {
+		max-height: 20em;
+	}
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		text-align: left;
+	}
+	.handle {
+		display: block;
+	}
+		#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}

@@ -1,0 +1,369 @@
+*{
+	font-family: 'News Cycle', sans-serif;
+}
+body {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	max-width: 1920px;
+	margin:0 auto;
+}
+header img {
+	max-width: 100px;
+	width: 100%;
+	height: auto;
+}
+header {
+	background: #1F1F21;
+	width: 100%;
+	height: 140px;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav ul {
+	overflow: hidden;
+	text-align: center;
+	font-size:1.4em;
+	margin:0;
+	padding: 0;
+	transition: max-height 0.5s;
+	background-color: #F7F7F7;
+}
+nav ul li {
+	display: inline-block;
+	text-decoration: none;
+	padding:26px;
+	color:#1F1F21;
+
+}
+nav ul li:hover {
+	background: #1F1F21;
+	color:white;
+}
+#home {
+	width: 100%;
+	max-width: 1920px;
+	background-image: url(../img/home-bg.png);
+	background-position: center;
+	background-repeat: none;
+	min-height: 500px;
+}
+#home {
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+#home p {
+		font-size: 6em;
+}
+.handle {
+	text-align: left;
+	cursor: pointer;
+	display: none;
+	font-size: 1.4em;
+	padding-left: 28px;
+	background-color: #D7D7D7;
+}
+#about {
+	position: relative;
+	width: 100%;
+	display: flex;
+	height: auto;
+}
+#about-img img {
+
+	margin-left: 35px;
+	display: block;
+	width: 100%;
+	max-width: 380px;
+	height: 220px;
+	border: 1px #d7d7d7 solid;
+}
+#about-text {
+	width: 65%;
+}
+#about-text p {
+	display: block;
+	margin-right: 5px;
+}
+.left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	height: 100vh;
+	background: white;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	height: 100vh;
+	background:  #F7F7F7;
+	-webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/***********Product*******************/
+	#product {
+	position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ghost-button {
+    color: #1F1F21;
+    background: #fff;
+    border: 1px solid #1F1F21;
+    font-size: 0.8em;
+    padding: 3px 6px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-left: 100px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 10px;
+}
+.ghost-button:hover, .ghost-button:active {
+  color:#fff;
+  background:#1F1F21;
+}
+.box {
+	margin-top: 50px;
+  width: 15rem;
+  height: 20rem;
+  padding: 0 2rem 3rem;
+  transition:
+    transform 0.3s linear 0s,
+    filter 0.5s linear 0.3s,
+    opacity 0.5s linear 0.3s;
+  /*transform-origin: top center;*/
+}
+.product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+ 
+  background-color: #fff;
+  background-position: top 3rem center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition:
+    box-shadow 0.5s linear,
+    height 0.1s linear 0s;
+}
+#iphone5 {
+	 background-image: url(https://megamaster.kiev.ua/lib/images/telefonu/iphone/topic_iphone_5.png);
+}
+#iphone5c {
+	 background-image: url(https://cdn.macrumors.com/article-new/2013/09/green-iphone5c.jpg?retina);
+}
+#airpods {
+	 background-image: url(https://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/M/ME/MMEF2/MMEF2?wid=572&hei=572&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1473705678057);
+}
+#iphone6 {
+	 background-image: url(http://smb.optus.com.au/opfiles/Shop/Consumer/Assets/Images/responsive-product-page/Apple/iphone6-plus-spacegrey.png);
+}
+#iphone7 {
+	 background-image: url(http://cdn2.gsmarena.com/vv/pics/apple/apple-iphone-7-1.jpg);
+}
+#watch {
+	 background-image: url(https://9to5mac.files.wordpress.com/2016/07/38mm-apple-watch-sport-1.jpg?quality=82&strip=all&strip=all&w=1600&h=1000);
+}
+.name {
+  display: block;
+  padding: 1rem 0.5rem;
+}
+.description {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0 1.5rem;
+  opacity: 0;
+  transition: opacity 0.1s linear 0s;
+}
+
+.wrapper:hover .box:not(:hover)  {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+.box:hover  {
+  transform: scale(1.1);
+  transition:
+    transform 0.3s linear 0.3s,
+    filter 0.1s linear 0s,
+    opacity 0.1s linear 0s;
+}
+.box:hover .product {
+  height: 23rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition:
+    box-shadow 1s linear,
+    height 0.3s linear 0.5s;
+}
+.box:hover .description {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.75s;
+}
+/*************Contact-page***********/
+#contact {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color:#F7F7F7; 
+}
+#feedback-page{
+	position: relative;
+	text-align:center;
+}
+#form-main{
+	position: static;
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+#form-div {
+	position: relative;
+	background: #fff;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:110px;
+	padding-bottom:35px;
+	width: 450px;
+	float: left;
+	left: 50%;
+  margin-top:30px;
+	margin-left: -260px;
+}
+.feedback-input {
+	color:#000;
+	font-family: Montserrat, Arial, sans-serif;
+  font-weight:300;
+	font-size: 14px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fff;
+	padding: 13px 13px 13px 13px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #1F1F21;
+}
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	color: #1F1F21;
+	outline: none;
+  padding: 13px 13px 13px 13px;
+}
+.focused{
+	color:#1F1F21;
+	border:#30aed6 solid 2px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: 0px solid transparent;
+	cursor:pointer;
+	background-color: #1F1F21;
+	color:white;
+	font-size:18px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:300;
+}
+#button-blue:hover{
+	background-color: #fff;
+	color: #1F1F21;
+  border: 1px solid #1F1F21;
+}
+.submit:hover {
+	color: #3498db;
+}
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+/**Footer**/
+footer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 150px;
+	width: 100%;
+	background-color: #1F1F21;
+	flex-wrap: wrap;
+}
+#social {
+	height: 65px;
+	align-self: center;
+	position: relative;
+}
+#social span {
+	margin-left: 35px;
+	font-size: 0.8em;
+}
+#social ul li {
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+}
+#social a i:hover {
+
+text-decoration: none;
+color:#D7D7D7;
+}
+#bottom {
+	display: block;
+	border-top: 1px #e3e3e3 solid;
+	width: 60%;
+	position: absolute;
+	color: #e3e3e3;
+	font-size: 0.9em;
+}
+#bottom i {
+	margin-left: 43%;
+}
