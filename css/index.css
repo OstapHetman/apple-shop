@@ -42,6 +42,18 @@ nav ul li:hover {
 	background: #1F1F21;
 	color:white;
 }
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  opacity: 0.7;
+  font-size: 0.7em;
+}
+.main-nav-scrolled:hover {
+	opacity: 1;
+}
+
 #home {
 	width: 100%;
 	max-width: 1920px;
